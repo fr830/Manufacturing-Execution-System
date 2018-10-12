@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manufacturing Execution System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>MES test</h1>
+    <hr />
+    <p><span style="font-family:Microsoft JhengHei;">Station View State</span></p>
+    {% for i in status_by_station %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+    <hr />
+    <p><span style="font-family:Microsoft JhengHei;">Object View State</span></p>
+    {% for i in status_by_object %}
+        <p>{{ i }}</p>
+    {% endfor %}
+  </body>
+</html>
