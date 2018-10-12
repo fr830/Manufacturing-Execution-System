@@ -6,4 +6,4 @@
 
 ## views.py
 * 核心程式所在，資料的處理都在這裡進行
-* 透過templates將參數回傳給base.html，進行顯示
+* 負責將參數回傳給base.html，進行網頁顯示
