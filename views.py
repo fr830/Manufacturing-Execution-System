@@ -2,11 +2,12 @@ from django.shortcuts import render
 # Create your views here.
 
 def ViewBase(request):
+    #資料模擬
     status_by_station=['-','A','-','-','-'] #工作站矩陣
     status_by_object=['A'] #物件矩陣
 
     station_name=['Station 1','Station 2','Station 3','Station 4','Station 5'] #工作站名稱矩陣
-
+    #---
 
     sbs_out = [] #工作站視角最後輸出字串
     sbo_out = [] #物件視角最後輸出字串
