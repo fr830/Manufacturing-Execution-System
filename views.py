@@ -1,7 +1,16 @@
 from django.shortcuts import render
 # Create your views here.
 
+
 def ViewBase(request):
+    return render(request, 'base.html')
+
+
+def ViewSchedule(request):
+    return render(request, 'Schedule.html')
+
+
+def ViewMoniter(request):
     #資料模擬
     status_by_station=['-','A','-','-','-'] #工作站矩陣
     status_by_object=['A'] #物件矩陣
@@ -18,6 +27,22 @@ def ViewBase(request):
 
 
     #輸出參數至base.html
-    return render(request, 'base.html',{'status_by_station': sbs_out,
+    return render(request, 'Moniter.html',{'status_by_station': sbs_out,
                                         'status_by_object': sbo_out,
                                         })
+
+
+def ViewQuality(request):
+    return render(request, 'Quality.html')
+
+
+def ViewEquipment(request):
+    return render(request, 'Equipment.html')
+
+
+def ViewInventory(request):
+    return render(request, 'Inventory.html')
+
+
+def ViewStatistics(request):
+    return render(request, 'Statistics.html')
