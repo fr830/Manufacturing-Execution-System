@@ -10,7 +10,7 @@ body{
 #menu-center{
   /*設定menu內容區塊*/
   width:auto;/*寬度自動*/
-  margin:10px auto;/*的上/下外距為10px 左/右auto(代表置中須設定寬度才有效)*/
+  margin:auto auto auto auto;/*的上/下外距為10px 左/右auto(代表置中須設定寬度才有效)*/
 }
 a{
   /*設定連結基本樣式*/
