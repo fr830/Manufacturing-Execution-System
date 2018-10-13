@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+
+    <h1>MES</h1>
+    <hr />
+    <p><span style="font-family:Microsoft JhengHei;">Station View State</span></p>
+    {% for i in status_by_station %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+    <hr />
+    <p><span style="font-family:Microsoft JhengHei;">Object View State</span></p>
+    {% for i in status_by_object %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+{% endblock %}
